@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff</title>
+    <link href="styles/style.css" rel="stylesheet">
+
+    <style>
+   /*  table tr:nth-child(2){
+        background-color: aquamarine;
+        border-radius: 20px;
+     } */
+
+     tbody tr:nth-child(even)
+{
+    background-color: rgb(234, 0, 255);
+}
+     h1{
+        border: 2px solid green;
+        border-radius: 30px 40px;
+     }
+
+     /* section>img{
+        display: block;
+     } */
+     /* section>img:first-child{
+        border-radius: 15px;
+     } */
+     /* section>img:last-child{
+        border-radius: 15px;
+     } */
+     section>img:nth-child(2)
+     {
+        border-radius: 20px 15px;
+     }
+    </style>
+</head>
+<body background="images/tariff.jpg">
+    <header>
+        <section>
+            <img src="images/maruthi.jpg" alt="Maruthi car" style="display:none" >
+            <img src="images/nano.jpg" alt="Nano car">
+            <img src="images/audi.jpeg" alt="Audi car">
+        
+        </section>
+    </header>
+    <h1> Our Tariff </h1>
+    <table>
+        <thread>                 <!--table>thread>tr>td*3-->
+            <tr>
+                <td>sl.no</td>
+                <td>model</td>
+                <td>rate per km</td>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>maruthi</td>
+                <td>Rs.26.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>nano</td>
+                <td>Rs.12.00</td>
+            </tr>
+            <tr> 
+                <td>3</td>
+                <td>Audi</td>
+                <td>Rs.30.00</td>
+            </tr>
+        </tbody>            <!--  tbody>(tr>td*3)*3 -->
+    </table>
+</body>
+</html>

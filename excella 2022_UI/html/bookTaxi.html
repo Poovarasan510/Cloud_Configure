@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Taxi</title>
+ 
+    <style>
+          .greenColor{
+            color:rgba(12, 119, 60, 0.897);
+        }
+        .center {
+        border: 5px solid #FFFF00;
+        text-align: center;
+        }
+    </style>
+</head>
+<body background="images/flowerkings.jpg">
+    <header>
+        <div class="center">
+        <h1>Flower King Taxi Service</h1>
+        <p>Flower king is no 1 taxi company in India</p>
+        <form action="index.html" method="get">
+            <div>
+                <label for="customerName">Customer Name</label>
+                <input type="text" name="customerName" id="customerName">
+            </div>
+            <div>
+                <label for="requestedDate&Time">Requested (date and time):</label>
+                <input type="datetime-local" id="requestedDate&Time" name="requestedDate&Time">
+            </div>
+            <div>
+                <label for="pickuppoint">PickUp Point</label>
+                <input type="text" name="pickuppoint" id="pickuppoint">
+            </div>
+            <div><label for="droppoint">Drop Point</label>
+                <input type="text" name="dropppoint" id="droppoint">
+            </div>
+      
+           
+            <div>
+                <label for="customerMobileNumber">Customer Mobile Number</label>
+                <input type="tel" name="customerMobileNumber" id="customerMobileNumber" 
+                placeholder="Enter Mobile Number" required><span class="greenColor">(*)</span>
+            </div>
+            <div>
+                <div>
+                    <label for="vechileType">Vehicle Type</label>
+                    <select type="vechileType" name="vechileType" id="vechileType">
+                    <option value="car">Car</option> 
+                    <option value="Tempo">Tempo</option>
+                    <option value="Traveller">Traveller</option>
+                    <option value="Bus">Bus</option>
+                    </select>
+                </div>
+                <div>
+            
+                    <label for="specialInstruction">Special Instruction</label>
+                    <div>
+                        <textarea rows="4" cols="50" name="comment" form="specialInstruction">
+                            Enter text here...</textarea>
+                    </div>
+                   
+                </div>
+                <div>
+
+                    <input type="reset" value="Clear">
+                    <input type="Submit" value="Register">
+               </div>
+            </div>
+               <center>
+                <!-- The image has scrolling behavior to left -->
+                <marquee  behavior="scroll" direction="left">        
+                      <img src="images/flagging.jpg"
+            
+                </marquee>  
+                  
+               <!-- The image has scrolling behavior to the upper direction. -->
+               <marquee  behavior="scroll" direction="up">         
+                      <img src= "images/flagging.jpg
+        
+                </marquee>  
+            </center>
+        </form>
+
+    </header>
+   
+    
+</body>
+</html>
