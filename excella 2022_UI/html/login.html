@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <style>
         .redColor{
             color:rgba(220, 20, 20, 0.897);
@@ -15,13 +17,13 @@
     <header>
         <section>
             <article>
-                <form action="tariff.html" method="get">     <!--form>(div>(label+input[type=""]))*3-->
+                <form action="tariff.html" method="get" class="form-horizontal">     <!--form>(div>(label+input[type=""]))*3-->
                     <div>
-                        <label for="userName">User Id</label>
+                        <label for="userName" class="label-primary">User Id</label>
                         <input type="email" name="email" id="userName"><span class="redColor">(*)</span>
                     </div>
                     <div>
-                        <label for="password">Pass Word</label>
+                        <label for="password" class="label-primary">Pass Word</label>
                         <input type="password" name="password" id="password"
                         placeholder="Enter the password" required><span class="redColor">(*)</span>
                     </div>
